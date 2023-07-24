@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b04ee4730a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hi There,</p>
+            <h1>Meu nome é <span>Antonio</span> <br>estudo desenvolvimento web e mobile</h1>
+        </div>
+
+    </div>
+</div>
+<!--------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+
+
+               <!---- <img src="images/mobileversion.png"> -->
+
+
+
+
+<!-------------very important this is way to add two different images on mobile and desktop----->
+
+               <img id="img1" src="images/fotoPerfil.PNG" alt="">
+               <img id="img2" src="images/WhatsApp Image 2023-07-23 at 21.11.21.jpeg" alt="">
+
+
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title>">Sobre mim</h1>
+                <p>
+                    Olá, sou Antonio, um estudante dedicado de Sistemas de Informação, focado em aprimorar minhas habilidades em Desenvolvimento Android com Java. Atualmente, estou cursando na Universidade Federal de Uberlândia (UFU) e tenho o prazer de atuar na Empresa Júnior de Sistemas de Informação, onde mergulho em experiências enriquecedoras no universo da tecnologia.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Linguagens</span><br>HTML, CSS, JavaScript, Java, Python, C, SQL</li>
+                        <li><span>Tecnologias e ferramentas </span><br>VS Code, Android Studio, Git, GitHub, React</li>
+                        <li><span>Databases</span><br>MySQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Trabalho</span><br>Atualmente trabalho voluntariamente na epresa júnior ASCII , na qual tenho a oportunidade de aplicar metodologias ágeis como Scrum, o que me proporciona uma visão abrangente e colaborativa dos projetos. Com foco no desenvolvimento front-end e back-end, participo de diversas etapas do ciclo de vida dos sistemas, desde a concepção até a entrega final. Essa experiência me permitiu aprimorar minhas habilidades técnicas, trabalhar em equipe e enfrentar desafios com soluções inovadoras.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Atualmente</span><br>Sistemas de Informação - UFU</li>
+                        <li><span>2020</span><br> Intercâmbio - ILAC (International Language Academy of Canada) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title>">Meus serviços</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code fa-flip"></i>
+                <h2>Web Development</h2>
+                <p>Usando HTML, CSS, JavaScript, e outras tecnologias e ferramentas de desenvolvimento de sites
+                  participei de projetos para a empresa júnior e tambem para projetos pessoais, fazendo sites totalmente funcionais e responsivos</p>
+                <a href="https://www.linkedin.com/in/antonio-0bab3223a/"  target="_blank">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-brands fa-android fa-spin"></i>
+                <h2>Desenvolvimento java/kotlin para apps</h2>
+                <p>Participei ativamente de projetos acadêmicos e pessoais, onde tive a oportunidade de aplicar conceitos avançados de desenvolvimento Android e Java, resultando em aplicativos intuitivos, funcionais e voltados para as necessidades dos usuários.</p>
+                <a href="https://github.com/Anton0910" target="_blank">Learn more</a>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<!------------------portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title>">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Valorant assistant</h3>
+                    <p>Aplicativo no qual permite cadastras composições e personagens favoritos do jogo
+                    </p>
+                    <a href="https://github.com/Anton0910/ValorantAssistant" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Site médico</h3>
+                    <p>Site no qual é possivél agendar consultas medias, cadastras prontuarios, gerar graficos de sinais vitaism entre outras funçoes.
+                    </p>
+                    <a href="https://www.linkedin.com/in/shivendra-kumar-singh-7ba1b8208" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Projeto de banco de dados</h3>
+                    <p> Projeto documentado de banco de dados, apresentando diagramas, modelo relacional, tabelas e consultas.
+                    </p>
+                    <a href="https://github.com/Anton0910/Projeto-Banco-de-Dados/blob/main/Apresenta%C3%A7%C3%A3o%20banco%20de%20dados.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!------------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Faça contato comigo</h1>
+                <p><i class="fa-solid fa-paper-plane fa-beat-fade"></i>antonio-emilio_6@hotmail.com</p>
+                <p><i class="fa-solid fa-square-phone fa-beat-fade"></i>17 99258-7557</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/antonio-0bab3223a/"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                    <a href="https://www.instagram.com/antonioe_09/"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                    <a href="https://github.com/Anton0910"><i class="fa-brands fa-github fa-bounce"></i></a>
+                    <a href="https://www.facebook.com/antonioemilio.oliveira/"><i class="fa-brands fa-facebook fa-bounce"></i></a>
+                </div>
+                <a href="images/RxResume_PDFExport_antonio1661_imported-from-linkedin-21042023025049_1682046426.pdf" download class="btn btn2">Download Resumo</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Anton0910 Love <i class="fa-solid fa-heart fa-fade"></i> to Design Something Different</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+</script>
+
+
+<script>
+    const msg=document.getElementById("msg")
+    form.addEventListner('submit', e=>{
+        e.preventDefault()
+        fetch(scriptURL, {method: 'Post', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfullly"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(erroe => console.error('Error!', error.message))
+    })
+</script>
+    
+</body>
+</html>
